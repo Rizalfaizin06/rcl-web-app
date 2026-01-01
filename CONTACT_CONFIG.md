@@ -40,6 +40,18 @@ Semua data kontak di website ini menggunakan environment variables untuk memudah
 -   `NEXT_PUBLIC_LINKEDIN_URL` - URL LinkedIn
 -   `NEXT_PUBLIC_YOUTUBE_URL` - URL YouTube
 
+#### Developer Portfolio
+
+-   `NEXT_PUBLIC_PORTFOLIO_URL` - URL portfolio developer (default: https://portfolio.rcl.my.id)
+-   `NEXT_PUBLIC_DEVELOPER_NAME` - Nama developer (default: Rizal)
+-   `NEXT_PUBLIC_SHOW_PORTFOLIO` - Tampilkan badge portfolio (true/false)
+
+#### Service URLs
+
+-   `NEXT_PUBLIC_WEB_SERVICE_URL` - URL layanan web development
+-   `NEXT_PUBLIC_IOT_SERVICE_URL` - URL layanan IoT systems
+-   `NEXT_PUBLIC_INFRA_SERVICE_URL` - URL layanan IT infrastructure
+
 ### Usage in Code
 
 Import konfigurasi di komponen Anda:
@@ -50,11 +62,27 @@ import { contactConfig, openWhatsApp } from "@/lib/contact";
 // Menggunakan data kontak
 const companyName = contactConfig.company.name;
 const phone = contactConfig.contact.phone;
+const portfolioUrl = contactConfig.portfolio.url;
+
+// Menggunakan service URLs
+const webServiceUrl = contactConfig.services.web;
+const iotServiceUrl = contactConfig.services.iot;
+const infraServiceUrl = contactConfig.services.infra;
 
 // Membuka WhatsApp
 openWhatsApp(); // Menggunakan default phone & message
 openWhatsApp("+628123456789", "Custom message"); // Custom phone & message
 ```
+
+### Portfolio Badge Features
+
+Website ini dilengkapi dengan 3 cara untuk menampilkan portfolio developer:
+
+1. **Badge di About Section** - Muncul setelah deskripsi layanan
+2. **Badge di Footer** - Muncul di atas copyright
+3. **Floating Badge** - Badge yang melayang di pojok kanan bawah (dengan animasi pulse & tooltip)
+
+Semua badge dapat dinonaktifkan dengan mengatur `NEXT_PUBLIC_SHOW_PORTFOLIO=false` di `.env.local`
 
 ### File Structure
 
@@ -67,9 +95,12 @@ openWhatsApp("+628123456789", "Custom message"); // Custom phone & message
     └── components/
         ├── Header.tsx
         ├── Hero.tsx
+        ├── About.tsx
         ├── Contact.tsx
         ├── CTA.tsx
-        └── Footer.tsx
+        ├── Footer.tsx
+        ├── PortfolioBadge.tsx      # Badge portfolio (reusable)
+        └── FloatingPortfolio.tsx   # Floating badge dengan animasi
 ```
 
 ### Notes

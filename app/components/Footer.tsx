@@ -1,4 +1,5 @@
 import { contactConfig } from "@/lib/contact";
+import PortfolioBadge from "./PortfolioBadge";
 
 export default function Footer() {
     return (
@@ -75,7 +76,7 @@ export default function Footer() {
                             </li>
                             <li className="text-gray-400">
                                 <i className="fas fa-envelope mr-2"></i>
-                                {contactConfig.contact.emailFooter}
+                                {contactConfig.contact.email}
                             </li>
                             <li className="text-gray-400">
                                 <i className="fas fa-map-marker-alt mr-2"></i>
@@ -85,8 +86,15 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="border-t border-gray-800 pt-8 text-center">
-                    <p className="text-gray-400">
+                <div className="border-t border-gray-800 pt-8 pb-4">
+                    {/* Portfolio Badge - Centered */}
+                    {contactConfig.portfolio.showPortfolio && (
+                        <div className="flex justify-center mb-6">
+                            <PortfolioBadge />
+                        </div>
+                    )}
+
+                    <p className="text-gray-400 text-center">
                         &copy; 2018 {contactConfig.company.name}. All rights
                         reserved.
                     </p>

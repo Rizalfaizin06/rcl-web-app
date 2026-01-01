@@ -1,3 +1,5 @@
+import PortfolioBadge from "./PortfolioBadge";
+
 export default function About() {
     return (
         <section id="about" className="py-16 bg-white pt-32">
@@ -51,6 +53,11 @@ export default function About() {
                                     </p>
                                 </div>
                             </div>
+                        </div>
+
+                        {/* Portfolio Badge */}
+                        <div className="mt-8 flex justify-center md:justify-start">
+                            <PortfolioBadge />
                         </div>
                     </div>
                     <div className="bg-gradient-to-br from-blue-100 to-blue-50 rounded-2xl p-12 text-center">

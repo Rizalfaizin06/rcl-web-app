@@ -7,6 +7,7 @@ import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import CTA from "./components/CTA";
 import Footer from "./components/Footer";
+import FloatingPortfolio from "./components/FloatingPortfolio";
 
 export default function Home() {
     return (
@@ -20,6 +21,7 @@ export default function Home() {
             <Contact />
             <CTA />
             <Footer />
+            <FloatingPortfolio />
         </div>
     );
 }

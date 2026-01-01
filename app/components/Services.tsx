@@ -1,3 +1,5 @@
+import { contactConfig } from "@/lib/contact";
+
 export default function Services() {
     return (
         <section id="services" className="py-16 bg-white pt-32">
@@ -41,7 +43,9 @@ export default function Services() {
                             </li>
                         </ul>
                         <a
-                            href="https://web.rizalscompanylab.my.id"
+                            href={contactConfig.services.web}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="block w-full bg-blue-600 text-white text-center px-6 py-3 rounded-lg hover:bg-blue-700 transition font-medium"
                         >
                             Lihat Layanan Website
@@ -76,7 +80,9 @@ export default function Services() {
                             </li>
                         </ul>
                         <a
-                            href="#iot-studio"
+                            href={contactConfig.services.iot}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="block w-full bg-blue-600 text-white text-center px-6 py-3 rounded-lg hover:bg-blue-700 transition font-medium"
                         >
                             Lihat Layanan IoT
@@ -111,7 +117,9 @@ export default function Services() {
                             </li>
                         </ul>
                         <a
-                            href="#iot-studio"
+                            href={contactConfig.services.infra}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="block w-full bg-blue-600 text-white text-center px-6 py-3 rounded-lg hover:bg-blue-700 transition font-medium"
                         >
                             Lihat Layanan Infrastructure

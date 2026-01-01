@@ -13,10 +13,7 @@ export const contactConfig = {
         phone: process.env.NEXT_PUBLIC_PHONE || "+628994183032",
         phoneDisplay:
             process.env.NEXT_PUBLIC_PHONE_DISPLAY || "+62 899-418-3032",
-        email: process.env.NEXT_PUBLIC_EMAIL || "info@rizalscompanylab.com",
-        emailFooter:
-            process.env.NEXT_PUBLIC_EMAIL_FOOTER ||
-            "hello@rizalscompanylab.my.id",
+        email: process.env.NEXT_PUBLIC_EMAIL || "hello@rizalscompanylab.my.id",
         location: process.env.NEXT_PUBLIC_LOCATION || "Jakarta, Indonesia",
         whatsappDefaultMessage:
             process.env.NEXT_PUBLIC_WHATSAPP_DEFAULT_MESSAGE ||
@@ -41,6 +38,25 @@ export const contactConfig = {
         youtube:
             process.env.NEXT_PUBLIC_YOUTUBE_URL ||
             "https://youtube.com/c/rizalscompanylab",
+    },
+    portfolio: {
+        url:
+            process.env.NEXT_PUBLIC_PORTFOLIO_URL ||
+            "https://portfolio.rcl.my.id",
+        developerName: process.env.NEXT_PUBLIC_DEVELOPER_NAME || "Rizal",
+        showPortfolio:
+            process.env.NEXT_PUBLIC_SHOW_PORTFOLIO === "true" || true,
+    },
+    services: {
+        web:
+            process.env.NEXT_PUBLIC_WEB_SERVICE_URL ||
+            "https://web.rizalscompanylab.my.id",
+        iot:
+            process.env.NEXT_PUBLIC_IOT_SERVICE_URL ||
+            "https://iot.rizalscompanylab.my.id",
+        infra:
+            process.env.NEXT_PUBLIC_INFRA_SERVICE_URL ||
+            "https://infra.rizalscompanylab.my.id",
     },
 };
 
