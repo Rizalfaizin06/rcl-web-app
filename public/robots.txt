@@ -1,0 +1,14 @@
+# robots.txt for Rizal Company Lab
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://rizalscompanylab.my.id/sitemap.xml
+
+# Disallow admin or private pages if any
+# Disallow: /admin/
+# Disallow: /private/
+
+# Crawl-delay (optional)
+Crawl-delay: 0
