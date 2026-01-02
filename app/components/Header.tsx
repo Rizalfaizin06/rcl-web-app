@@ -62,7 +62,7 @@ export default function Header() {
                         </a>
                         <button
                             onClick={() => openWhatsApp()}
-                            className="px-5 py-2.5 gradient-bg text-white rounded-lg text-sm font-medium shadow-lg hover:shadow-xl transition-all bg-blue-600 cursor-pointer border-none"
+                            className="px-5 py-2.5 text-white rounded-lg text-sm font-medium shadow-lg hover:shadow-xl transition-all bg-blue-600 hover:bg-blue-800 cursor-pointer border-none"
                         >
                             Konsultasi Gratis
                         </button>

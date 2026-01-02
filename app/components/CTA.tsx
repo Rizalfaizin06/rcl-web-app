@@ -18,7 +18,7 @@ export default function CTA() {
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <button
                         onClick={() => openWhatsApp()}
-                        className="bg-white text-blue-600 px-8 py-3 rounded-lg hover:bg-gray-100 transition text-lg font-medium inline-flex items-center justify-center cursor-pointer border-none"
+                        className="bg-white text-blue-600 px-8 py-3 rounded-lg hover:bg-gray-300 transition text-lg font-medium inline-flex items-center justify-center cursor-pointer border-none"
                     >
                         <i className="fab fa-whatsapp mr-2"></i>
                         Chat WhatsApp
