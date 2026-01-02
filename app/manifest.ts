@@ -1,5 +1,7 @@
 import { MetadataRoute } from "next";
 
+export const dynamic = "force-static"; // Required for static export
+
 export default function manifest(): MetadataRoute.Manifest {
     return {
         name: "Rizal Company Lab - Jasa IT Terpercaya",
