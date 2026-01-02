@@ -7,7 +7,7 @@ export default function manifest(): MetadataRoute.Manifest {
         name: "Rizal Company Lab - Jasa IT Terpercaya",
         short_name: "RCL",
         description:
-            "Rizal Faizin Firdaus - Jasa pembuatan website, setting jaringan, pasang internet, buat server, aplikasi, alat otomatis, dan IoT",
+            "Rizal Company Lab - Jasa pembuatan website, setting jaringan, pasang internet, buat server, aplikasi, alat otomatis, dan IoT",
         start_url: "/",
         display: "standalone",
         background_color: "#ffffff",

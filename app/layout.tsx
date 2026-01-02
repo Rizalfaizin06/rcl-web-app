@@ -10,14 +10,14 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-    metadataBase: new URL("https://rizalscompanylab.com"),
+    metadataBase: new URL("https://rizalscompanylab.my.id"),
     title: {
         default:
-            "RIZAL FAIZIN FIRDAUS - Rizal Company Lab | Jasa Pembuatan Website, IoT, Server & Jaringan",
+            "Rizal Company Lab | Jasa Pembuatan Website, IoT, Server & Jaringan",
         template: "%s | Rizal Company Lab",
     },
     description:
-        "Rizal Faizin Firdaus - Rizal Company Lab menyediakan jasa pembuatan website, jasa setting jaringan, jasa pasang internet, jasa buat server, jasa buat aplikasi, jasa membuat alat otomatis, dan jasa IoT terpercaya di Indonesia.",
+        "Rizal Company Lab menyediakan jasa pembuatan website, jasa setting jaringan, jasa pasang internet, jasa buat server, jasa buat aplikasi, jasa membuat alat otomatis, dan jasa IoT terpercaya di Indonesia.",
     keywords: [
         "RIZAL FAIZIN FIRDAUS",
         "RIZAL COMPANY",
@@ -68,14 +68,14 @@ export const metadata: Metadata = {
     openGraph: {
         type: "website",
         locale: "id_ID",
-        url: "https://rizalscompanylab.com",
+        url: "https://rizalscompanylab.my.id",
         siteName: "Rizal Company Lab",
-        title: "RIZAL FAIZIN FIRDAUS - Rizal Company Lab | Jasa Pembuatan Website, IoT, Server & Jaringan",
+        title: "Rizal Company Lab | Jasa Pembuatan Website, IoT, Server & Jaringan",
         description:
             "Jasa pembuatan website, setting jaringan, pasang internet, buat server, buat aplikasi, membuat alat otomatis, dan IoT terpercaya di Indonesia oleh Rizal Faizin Firdaus.",
         images: [
             {
-                url: "/images/logo/rcl-logo.png",
+                url: "/images/logo/logo-rcl.png",
                 width: 1200,
                 height: 630,
                 alt: "Rizal Company Lab Logo",
@@ -84,19 +84,19 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "RIZAL FAIZIN FIRDAUS - Rizal Company Lab | Jasa IT Terpercaya",
+        title: "Rizal Company Lab | Jasa IT Terpercaya",
         description:
             "Jasa pembuatan website, IoT, server, aplikasi, dan alat otomatis terpercaya di Indonesia.",
-        images: ["/images/logo/rcl-logo.png"],
+        images: ["/images/logo/logo-rcl.png"],
         creator: "@rizalcompanylab",
     },
     verification: {
-        google: "your-google-verification-code",
+        // google: "your-google-verification-code",
         // yandex: 'your-yandex-verification-code',
         // bing: 'your-bing-verification-code',
     },
     alternates: {
-        canonical: "https://rizalscompanylab.com",
+        canonical: "https://rizalscompanylab.my.id",
     },
     category: "technology",
 };
@@ -110,24 +110,24 @@ export default function RootLayout({
         "@context": "https://schema.org",
         "@type": "Organization",
         name: "Rizal Company Lab",
-        alternateName: ["Rizal Lab", "RCL", "Rizal's Company Lab"],
-        url: "https://rizalscompanylab.com",
-        logo: "https://rizalscompanylab.com/images/logo/rcl-logo.png",
+        alternateName: ["Rizal's Company Lab", "RCL", "Rizal Lab"],
+        url: "https://rizalscompanylab.my.id",
+        logo: "https://rizalscompanylab.my.id/images/logo/logo-rcl.png",
         description:
-            "Rizal Faizin Firdaus - Rizal Company Lab menyediakan jasa pembuatan website, setting jaringan, pasang internet, buat server, aplikasi, alat otomatis, dan IoT",
+            "Rizal Company Lab menyediakan jasa pembuatan website, setting jaringan, pasang internet, buat server, aplikasi, alat otomatis, dan IoT",
         founder: {
             "@type": "Person",
             name: "Rizal Faizin Firdaus",
             jobTitle: "Founder & CEO",
             sameAs: [
-                "https://www.linkedin.com/in/rizalfaizin",
-                "https://github.com/rizalfaizin",
+                "https://www.linkedin.com/in/rizal-ff/",
+                "https://github.com/rizalfaizin06",
             ],
         },
         contactPoint: {
             "@type": "ContactPoint",
             contactType: "Customer Service",
-            email: "info@rizalscompanylab.com",
+            email: "hello@rizalscompanylab.my.id",
         },
         address: {
             "@type": "PostalAddress",
@@ -135,9 +135,11 @@ export default function RootLayout({
             addressLocality: "Indonesia",
         },
         sameAs: [
-            "https://www.instagram.com/rizalscompanylab",
-            "https://www.facebook.com/rizalscompanylab",
-            "https://twitter.com/rizalcompanylab",
+            "https://www.instagram.com/rcl.my.id/",
+            "https://www.facebook.com/profile.php?id=61585610125639",
+            "https://x.com/rizalslab",
+            "https://www.tiktok.com/@rizalscompanylab",
+            "https://www.youtube.com/@RizalsCompanyLab",
         ],
         areaServed: "ID",
         serviceType: [
