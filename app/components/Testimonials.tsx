@@ -10,13 +10,13 @@ export default function Testimonials() {
             stars: 5,
             text: '"Desainnya rapi dan modern. Yang paling saya suka adalah komunikasi yang mudah langsung dengan developernya."',
             name: "Siti Nurhaliza",
-            title: "Founder Startup F&B",
+            title: "Owner Toko",
         },
         {
             stars: 5,
             text: '"Harga terjangkau untuk kualitas premium. Website kami sekarang terlihat lebih profesional dan meningkatkan kredibilitas bisnis."',
             name: "Ahmad Rizki",
-            title: "Direktur PT. Maju Jaya",
+            title: "Staff Marketing",
         },
     ];
 
